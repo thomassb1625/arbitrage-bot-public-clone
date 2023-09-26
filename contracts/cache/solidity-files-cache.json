@@ -1,0 +1,1424 @@
+{
+  "_format": "ethers-rs-sol-cache-3",
+  "paths": {
+    "artifacts": "out",
+    "build_infos": "out/build-info",
+    "sources": "src",
+    "tests": "test",
+    "scripts": "script",
+    "libraries": [
+      "lib"
+    ]
+  },
+  "files": {
+    "lib/aave-v3-core/contracts/dependencies/openzeppelin/contracts/IERC20.sol": {
+      "lastModificationDate": 1665683636045,
+      "contentHash": "58be66fdcf67c9480d4c210197da0204",
+      "sourceName": "lib/aave-v3-core/contracts/dependencies/openzeppelin/contracts/IERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "IERC20": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "contracts/IERC20.sol/IERC20.json"
+        }
+      }
+    },
+    "lib/aave-v3-core/contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol": {
+      "lastModificationDate": 1665683636048,
+      "contentHash": "5bf833bbea2ac5d712340cf235c9de8b",
+      "sourceName": "lib/aave-v3-core/contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/aave-v3-core/contracts/flashloan/interfaces/IFlashLoanSimpleReceiver.sol",
+        "lib/aave-v3-core/contracts/interfaces/IPool.sol",
+        "lib/aave-v3-core/contracts/interfaces/IPoolAddressesProvider.sol",
+        "lib/aave-v3-core/contracts/protocol/libraries/types/DataTypes.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "FlashLoanSimpleReceiverBase": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "FlashLoanSimpleReceiverBase.sol/FlashLoanSimpleReceiverBase.json"
+        }
+      }
+    },
+    "lib/aave-v3-core/contracts/flashloan/interfaces/IFlashLoanSimpleReceiver.sol": {
+      "lastModificationDate": 1665683636049,
+      "contentHash": "beb7cea8089b2c62a396bb1fe71abb3d",
+      "sourceName": "lib/aave-v3-core/contracts/flashloan/interfaces/IFlashLoanSimpleReceiver.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/aave-v3-core/contracts/interfaces/IPool.sol",
+        "lib/aave-v3-core/contracts/interfaces/IPoolAddressesProvider.sol",
+        "lib/aave-v3-core/contracts/protocol/libraries/types/DataTypes.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IFlashLoanSimpleReceiver": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "IFlashLoanSimpleReceiver.sol/IFlashLoanSimpleReceiver.json"
+        }
+      }
+    },
+    "lib/aave-v3-core/contracts/interfaces/IPool.sol": {
+      "lastModificationDate": 1665683636051,
+      "contentHash": "1386013efc7ade852fbe264df545cbeb",
+      "sourceName": "lib/aave-v3-core/contracts/interfaces/IPool.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/aave-v3-core/contracts/interfaces/IPoolAddressesProvider.sol",
+        "lib/aave-v3-core/contracts/protocol/libraries/types/DataTypes.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IPool": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "IPool.sol/IPool.json"
+        }
+      }
+    },
+    "lib/aave-v3-core/contracts/interfaces/IPoolAddressesProvider.sol": {
+      "lastModificationDate": 1665683636051,
+      "contentHash": "3684e0dc43efbbb778de2a2e6e4de694",
+      "sourceName": "lib/aave-v3-core/contracts/interfaces/IPoolAddressesProvider.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IPoolAddressesProvider": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "IPoolAddressesProvider.sol/IPoolAddressesProvider.json"
+        }
+      }
+    },
+    "lib/aave-v3-core/contracts/protocol/libraries/types/DataTypes.sol": {
+      "lastModificationDate": 1665683636065,
+      "contentHash": "c1464f9a5f3b4fb1eaf2bc3fb87722cf",
+      "sourceName": "lib/aave-v3-core/contracts/protocol/libraries/types/DataTypes.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "DataTypes": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "types/DataTypes.sol/DataTypes.json"
+        }
+      }
+    },
+    "lib/forge-std/lib/ds-test/src/test.sol": {
+      "lastModificationDate": 1665675989143,
+      "contentHash": "962996f0e05d5218857a538a62d7c47e",
+      "sourceName": "lib/forge-std/lib/ds-test/src/test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "DSTest": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "test.sol/DSTest.json"
+        }
+      }
+    },
+    "lib/forge-std/src/Script.sol": {
+      "lastModificationDate": 1665675987815,
+      "contentHash": "571dde8775a6214a03d6772ee330ead5",
+      "sourceName": "lib/forge-std/src/Script.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol"
+      ],
+      "versionRequirement": ">=0.6.0, <0.9.0",
+      "artifacts": {
+        "Script": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "Script.sol/Script.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdJson.sol": {
+      "lastModificationDate": 1665675987815,
+      "contentHash": "75c782f20a301ab9827060a03da071e4",
+      "sourceName": "lib/forge-std/src/StdJson.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.6.0, <0.9.0",
+      "artifacts": {
+        "stdJson": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "StdJson.sol/stdJson.json"
+        }
+      }
+    },
+    "lib/forge-std/src/Test.sol": {
+      "lastModificationDate": 1665675987816,
+      "contentHash": "6cab65c53a9548c2428a10697fd06dd1",
+      "sourceName": "lib/forge-std/src/Test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol"
+      ],
+      "versionRequirement": ">=0.6.0, <0.9.0",
+      "artifacts": {
+        "Test": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "src/Test.sol/Test.json"
+        },
+        "stdError": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "Test.sol/stdError.json"
+        },
+        "stdMath": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "Test.sol/stdMath.json"
+        },
+        "stdStorage": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "Test.sol/stdStorage.json"
+        }
+      }
+    },
+    "lib/forge-std/src/Vm.sol": {
+      "lastModificationDate": 1665675987816,
+      "contentHash": "248abdaa4c9039a1a8a1456949808bb9",
+      "sourceName": "lib/forge-std/src/Vm.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.0, <0.9.0",
+      "artifacts": {
+        "Vm": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "Vm.sol/Vm.json"
+        }
+      }
+    },
+    "lib/forge-std/src/console.sol": {
+      "lastModificationDate": 1665675987817,
+      "contentHash": "100b8a33b917da1147740d7ab8b0ded3",
+      "sourceName": "lib/forge-std/src/console.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.22, <0.9.0",
+      "artifacts": {
+        "console": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "console.sol/console.json"
+        }
+      }
+    },
+    "lib/forge-std/src/console2.sol": {
+      "lastModificationDate": 1665675987818,
+      "contentHash": "5df91f8e93efbfcccf68973dc1b74a70",
+      "sourceName": "lib/forge-std/src/console2.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.22, <0.9.0",
+      "artifacts": {
+        "console2": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "console2.sol/console2.json"
+        }
+      }
+    },
+    "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/Address.sol": {
+      "lastModificationDate": 1666047010309,
+      "contentHash": "bdb6e9218c297368a6ccd434a6ceb0ff",
+      "sourceName": "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/Address.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "Address": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "Address.sol/Address.json"
+        }
+      }
+    },
+    "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/IERC20.sol": {
+      "lastModificationDate": 1666047010309,
+      "contentHash": "91c0afdd4eb122474c0d0c040dab794a",
+      "sourceName": "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/IERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "IERC20": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "openzeppelin/contracts/IERC20.sol/IERC20.json"
+        }
+      }
+    },
+    "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeERC20.sol": {
+      "lastModificationDate": 1666047010310,
+      "contentHash": "7274eaf096edf0d7dde9b3282e4fcb42",
+      "sourceName": "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/Address.sol",
+        "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/IERC20.sol",
+        "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeMath.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "SafeERC20": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "SafeERC20.sol/SafeERC20.json"
+        }
+      }
+    },
+    "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeMath.sol": {
+      "lastModificationDate": 1666047010310,
+      "contentHash": "cf6dbbc25d7163c47e5260b755361955",
+      "sourceName": "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "SafeMath": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "SafeMath.sol/SafeMath.json"
+        }
+      }
+    },
+    "lib/protocol-v2/contracts/flashloan/base/FlashLoanReceiverBase.sol": {
+      "lastModificationDate": 1666047010312,
+      "contentHash": "342099eb47e5ca9af28b333264a5a149",
+      "sourceName": "lib/protocol-v2/contracts/flashloan/base/FlashLoanReceiverBase.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/Address.sol",
+        "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/IERC20.sol",
+        "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeERC20.sol",
+        "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeMath.sol",
+        "lib/protocol-v2/contracts/flashloan/interfaces/IFlashLoanReceiver.sol",
+        "lib/protocol-v2/contracts/interfaces/ILendingPool.sol",
+        "lib/protocol-v2/contracts/interfaces/ILendingPoolAddressesProvider.sol",
+        "lib/protocol-v2/contracts/protocol/libraries/types/DataTypes.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "FlashLoanReceiverBase": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "FlashLoanReceiverBase.sol/FlashLoanReceiverBase.json"
+        }
+      }
+    },
+    "lib/protocol-v2/contracts/flashloan/interfaces/IFlashLoanReceiver.sol": {
+      "lastModificationDate": 1666047010313,
+      "contentHash": "5e569987e7faa6a858ede0e47939966b",
+      "sourceName": "lib/protocol-v2/contracts/flashloan/interfaces/IFlashLoanReceiver.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/protocol-v2/contracts/interfaces/ILendingPool.sol",
+        "lib/protocol-v2/contracts/interfaces/ILendingPoolAddressesProvider.sol",
+        "lib/protocol-v2/contracts/protocol/libraries/types/DataTypes.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "IFlashLoanReceiver": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "IFlashLoanReceiver.sol/IFlashLoanReceiver.json"
+        }
+      }
+    },
+    "lib/protocol-v2/contracts/interfaces/ILendingPool.sol": {
+      "lastModificationDate": 1666047010314,
+      "contentHash": "c9d32b9924ef08162c2453bcb64c569a",
+      "sourceName": "lib/protocol-v2/contracts/interfaces/ILendingPool.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/protocol-v2/contracts/interfaces/ILendingPoolAddressesProvider.sol",
+        "lib/protocol-v2/contracts/protocol/libraries/types/DataTypes.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "ILendingPool": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "ILendingPool.sol/ILendingPool.json"
+        }
+      }
+    },
+    "lib/protocol-v2/contracts/interfaces/ILendingPoolAddressesProvider.sol": {
+      "lastModificationDate": 1666047010315,
+      "contentHash": "a487bfd067ce6e71ddc7e9cc91302bae",
+      "sourceName": "lib/protocol-v2/contracts/interfaces/ILendingPoolAddressesProvider.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "ILendingPoolAddressesProvider": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "ILendingPoolAddressesProvider.sol/ILendingPoolAddressesProvider.json"
+        }
+      }
+    },
+    "lib/protocol-v2/contracts/protocol/libraries/types/DataTypes.sol": {
+      "lastModificationDate": 1666047010330,
+      "contentHash": "2127b8d36674faba96bc703f72164a1a",
+      "sourceName": "lib/protocol-v2/contracts/protocol/libraries/types/DataTypes.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "DataTypes": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "libraries/types/DataTypes.sol/DataTypes.json"
+        }
+      }
+    },
+    "script/Contract.s.sol": {
+      "lastModificationDate": 1672263582086,
+      "contentHash": "eab43a0ff8ea7132a934f035a4c9aae0",
+      "sourceName": "script/Contract.s.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "Contract.s": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "Contract.s.sol/Contract.s.json"
+        }
+      }
+    },
+    "src/BundleExecutorv1.5.sol": {
+      "lastModificationDate": 1665957415746,
+      "contentHash": "1d6059d6667530fa10c68b0778be3bff",
+      "sourceName": "src/BundleExecutorv1.5.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/aave-v3-core/contracts/dependencies/openzeppelin/contracts/IERC20.sol",
+        "lib/aave-v3-core/contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol",
+        "lib/aave-v3-core/contracts/flashloan/interfaces/IFlashLoanSimpleReceiver.sol",
+        "lib/aave-v3-core/contracts/interfaces/IPool.sol",
+        "lib/aave-v3-core/contracts/interfaces/IPoolAddressesProvider.sol",
+        "lib/aave-v3-core/contracts/protocol/libraries/types/DataTypes.sol"
+      ],
+      "versionRequirement": "^0.8.10",
+      "artifacts": {
+        "FlashLoan": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "BundleExecutorv1.5.sol/FlashLoan.json"
+        },
+        "IWETH": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "BundleExecutorv1.5.sol/IWETH.json"
+        }
+      }
+    },
+    "src/BundleExecutorv2.sol": {
+      "lastModificationDate": 1665965567746,
+      "contentHash": "076b3f6f44edf51ee6d6238b2e301150",
+      "sourceName": "src/BundleExecutorv2.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/Address.sol",
+        "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/IERC20.sol",
+        "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeERC20.sol",
+        "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeMath.sol",
+        "lib/protocol-v2/contracts/flashloan/base/FlashLoanReceiverBase.sol",
+        "lib/protocol-v2/contracts/flashloan/interfaces/IFlashLoanReceiver.sol",
+        "lib/protocol-v2/contracts/interfaces/ILendingPool.sol",
+        "lib/protocol-v2/contracts/interfaces/ILendingPoolAddressesProvider.sol",
+        "lib/protocol-v2/contracts/protocol/libraries/types/DataTypes.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "BundleExecutorV2": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "BundleExecutorv2.sol/BundleExecutorV2.json"
+        },
+        "IWETH": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "BundleExecutorv2.sol/IWETH.json"
+        }
+      }
+    },
+    "src/ExecutorV3.yul": {
+      "lastModificationDate": 1672263582087,
+      "contentHash": "63fe730ac17ab9d33220b3375400fc31",
+      "sourceName": "src/ExecutorV3.yul",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": null,
+      "artifacts": {
+        "UniswapOptimized": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "ExecutorV3.yul/UniswapOptimized.json"
+        }
+      }
+    },
+    "src/FlashBotsUniswapQuery.sol": {
+      "lastModificationDate": 1664831955880,
+      "contentHash": "ed3ae7e26dda626c6cca0a0e02dd7beb",
+      "sourceName": "src/FlashBotsUniswapQuery.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "FlashBotsUniswapQuery": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "FlashBotsUniswapQuery.sol/FlashBotsUniswapQuery.json"
+        },
+        "IUniswapV2Pair": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "FlashBotsUniswapQuery.sol/IUniswapV2Pair.json"
+        },
+        "UniswapV2Factory": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "FlashBotsUniswapQuery.sol/UniswapV2Factory.json"
+        }
+      }
+    },
+    "src/FlashLoan.sol": {
+      "lastModificationDate": 1665957415746,
+      "contentHash": "dbbb061f539e421c03006daf0a813028",
+      "sourceName": "src/FlashLoan.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/aave-v3-core/contracts/dependencies/openzeppelin/contracts/IERC20.sol",
+        "lib/aave-v3-core/contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol",
+        "lib/aave-v3-core/contracts/flashloan/interfaces/IFlashLoanSimpleReceiver.sol",
+        "lib/aave-v3-core/contracts/interfaces/IPool.sol",
+        "lib/aave-v3-core/contracts/interfaces/IPoolAddressesProvider.sol",
+        "lib/aave-v3-core/contracts/protocol/libraries/types/DataTypes.sol"
+      ],
+      "versionRequirement": "^0.8.9",
+      "artifacts": {
+        "FlashLoan": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "FlashLoan.sol/FlashLoan.json"
+        }
+      }
+    },
+    "src/YulDeployer.sol": {
+      "lastModificationDate": 1672263582087,
+      "contentHash": "cea04f05515b35750d7097cca6c1651d",
+      "sourceName": "src/YulDeployer.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol"
+      ],
+      "versionRequirement": "=0.8.15",
+      "artifacts": {
+        "YulDeployer": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "YulDeployer.sol/YulDeployer.json"
+        }
+      }
+    },
+    "src/checkTransferTax.sol": {
+      "lastModificationDate": 1672263556905,
+      "contentHash": "9907cfb04be13799f33b3007bf2c0e1a",
+      "sourceName": "src/checkTransferTax.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/IERC20.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "checkTax": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "checkTransferTax.sol/checkTax.json"
+        }
+      }
+    },
+    "src/decimalsLookup.sol": {
+      "lastModificationDate": 1672263582087,
+      "contentHash": "222c7c2723a9a7e7a9d4ea19d11e8905",
+      "sourceName": "src/decimalsLookup.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "IERC20": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "decimalsLookup.sol/IERC20.json"
+        },
+        "decimalsLookup": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "decimalsLookup.sol/decimalsLookup.json"
+        }
+      }
+    },
+    "src/test.sol": {
+      "lastModificationDate": 1664831955880,
+      "contentHash": "9bc8ac4cecef6f24df789372bea6ee7a",
+      "sourceName": "src/test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "Test": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "test.sol/Test.json"
+        }
+      }
+    },
+    "test/ExecutorTest.t.sol": {
+      "lastModificationDate": 1672263582088,
+      "contentHash": "5c3b8f3b8caeb533c029a12b6307b74d",
+      "sourceName": "test/ExecutorTest.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "src/YulDeployer.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "ExecutorTest": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "ExecutorTest.t.sol/ExecutorTest.json"
+        },
+        "IERC20": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "ExecutorTest.t.sol/IERC20.json"
+        },
+        "Pair": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "ExecutorTest.t.sol/Pair.json"
+        },
+        "UniswapOptimized": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "ExecutorTest.t.sol/UniswapOptimized.json"
+        }
+      }
+    }
+  }
+}

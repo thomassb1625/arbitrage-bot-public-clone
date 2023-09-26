@@ -1,0 +1,1 @@
+[{"stateMutability": "view", "type": "function", "name": "get_y", "inputs": [{"name": "i", "type": "int128"}, {"name": "j", "type": "int128"}, {"name": "x", "type": "uint256"}, {"name": "xp_", "type": "uint256[8]"}, {"name": "A", "type": "uint256"}, {"name": "N_COINS", "type": "uint256"}, {"name": "D", "type": "uint256"}], "outputs": [{"name": "", "type": "uint256"}]}]

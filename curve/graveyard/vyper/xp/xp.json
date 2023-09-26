@@ -1,0 +1,1 @@
+[{"stateMutability": "view", "type": "function", "name": "_xp", "inputs": [{"name": "balances", "type": "uint256[8]"}, {"name": "N_COINS", "type": "uint256"}, {"name": "RATES", "type": "uint256[8]"}, {"name": "LENDING_PRECISION", "type": "uint256"}], "outputs": [{"name": "", "type": "uint256[8]"}]}]

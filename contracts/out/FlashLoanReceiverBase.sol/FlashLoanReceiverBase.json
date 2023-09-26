@@ -1,0 +1,882 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract ILendingPoolAddressesProvider",
+          "name": "provider",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "ADDRESSES_PROVIDER",
+      "outputs": [
+        {
+          "internalType": "contract ILendingPoolAddressesProvider",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "LENDING_POOL",
+      "outputs": [
+        {
+          "internalType": "contract ILendingPool",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "assets",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "amounts",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "premiums",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "address",
+          "name": "initiator",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "params",
+          "type": "bytes"
+        }
+      ],
+      "name": "executeOperation",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "ADDRESSES_PROVIDER()": "0542975c",
+    "LENDING_POOL()": "b4dcfc77",
+    "executeOperation(address[],uint256[],uint256[],address,bytes)": "920f5c84"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract ILendingPoolAddressesProvider\",\"name\":\"provider\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"ADDRESSES_PROVIDER\",\"outputs\":[{\"internalType\":\"contract ILendingPoolAddressesProvider\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"LENDING_POOL\",\"outputs\":[{\"internalType\":\"contract ILendingPool\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"assets\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"premiums\",\"type\":\"uint256[]\"},{\"internalType\":\"address\",\"name\":\"initiator\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"params\",\"type\":\"bytes\"}],\"name\":\"executeOperation\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/protocol-v2/contracts/flashloan/base/FlashLoanReceiverBase.sol\":\"FlashLoanReceiverBase\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@aave-v3-core/=lib/aave-v3-core/\",\":aave-v3-core/=lib/aave-v3-core/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":protocol-v2/=lib/protocol-v2/\"]},\"sources\":{\"lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/Address.sol\":{\"keccak256\":\"0xb7f2cd193efe93976d7b473fc4fa27dda83bd4db5b81889cbcd4701f3b7023ae\",\"license\":\"agpl-3.0\",\"urls\":[\"bzz-raw://2275632637acd2f30d576612dcddc1c6ba78d81af4d044fafe870e6a809a8b6e\",\"dweb:/ipfs/QmW3uMzrLbjzP45zVpP8e9V6o8WFSceHiHq8WDMJ8YjCeL\"]},\"lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/IERC20.sol\":{\"keccak256\":\"0x6406b04abfeda2c8c80ea3faf797ce4501e66db41fb6ff4e299ebe0402879f44\",\"license\":\"agpl-3.0\",\"urls\":[\"bzz-raw://33b0db81db37bd6fe20aa0b23581c6b0edef2f3c49d0bd88b4fe46c1164adb00\",\"dweb:/ipfs/QmYn1zYwt3ahpkLYwHh6h5b1UJrzP2xy5G3at9oEVNw2c1\"]},\"lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeERC20.sol\":{\"keccak256\":\"0xd664a81c469ebd6c7b09ca8be499e6af30100e3e42be6bfea9f4a90c02a7cb1c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c9f8ac1ffeaaefc7685abd544813e31ebb46e81b393291d68b1a99a9c7550df2\",\"dweb:/ipfs/QmP3xWkMNgDBbDn9HF6vVKpHTP5rW4j7dxWmhKsxicQ7Mg\"]},\"lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeMath.sol\":{\"keccak256\":\"0xfca35d11bafb85cf4f2203b41f1a98238dca59b6a9faa28b86ea3f9f63da8ec5\",\"license\":\"agpl-3.0\",\"urls\":[\"bzz-raw://7019345b024afa93000c6b5a2b095be59c3c5352eb658619c941d23d0af5bc65\",\"dweb:/ipfs/QmZLxJKSbM66Wd1Qd43jSdiXdg7JP6DQ9J6LuANUZummM4\"]},\"lib/protocol-v2/contracts/flashloan/base/FlashLoanReceiverBase.sol\":{\"keccak256\":\"0x8fe7badbe296140c709cb98e58df6dc74cff47ba8f5237d079ef659f0b28dc62\",\"license\":\"agpl-3.0\",\"urls\":[\"bzz-raw://48c297952c8b24a45fe359b61863d7fb180ad78a1a8054e1227588c313712c64\",\"dweb:/ipfs/QmYszjb1kFUM6sFsfsynSMUxCgtxwvsvPCaeXw2FHsgK81\"]},\"lib/protocol-v2/contracts/flashloan/interfaces/IFlashLoanReceiver.sol\":{\"keccak256\":\"0x5d3699fb09fdcfd69dfb67538dc3a0711711ad0d1ff54723cb371a3359d64107\",\"license\":\"agpl-3.0\",\"urls\":[\"bzz-raw://f86660197ef51242bf7d475376dab88b20b27d54eb59ba818881e208ccd8a8ac\",\"dweb:/ipfs/QmPpMtC1umHtnaq6dFwCgQkxdzWveXuGzN6ECVBHZ7obuy\"]},\"lib/protocol-v2/contracts/interfaces/ILendingPool.sol\":{\"keccak256\":\"0x5fa85a3137312e0d37602723af7408ed97636028699bdf7a7c7cc2dc34cdbafc\",\"license\":\"agpl-3.0\",\"urls\":[\"bzz-raw://2f084d52067cbb14f10a00813b17c386681e17e295f878d3d8992cef63e67ac1\",\"dweb:/ipfs/QmWGjEYp4ZHmMxW7zkV8ctsmpc5kAYDw3yqaf1LZGsFFuJ\"]},\"lib/protocol-v2/contracts/interfaces/ILendingPoolAddressesProvider.sol\":{\"keccak256\":\"0xcb0e2c4c19c0bde86907b6ab45b6a1db4932d3642fc51410d56c9411a65b9f1d\",\"license\":\"agpl-3.0\",\"urls\":[\"bzz-raw://38d01c9e664c64d46a15bbbda2933b5fb877d33f6746d2db32563962beea9119\",\"dweb:/ipfs/QmajEmcQZz3E6GzmLpeGvnEswuwCjVYy8svqdx8bxi4PuG\"]},\"lib/protocol-v2/contracts/protocol/libraries/types/DataTypes.sol\":{\"keccak256\":\"0xb1d3ae94d3e4b3bf23b3394d820a3a2b5ba56fd5389f561f3fdd73ed1c60c391\",\"license\":\"agpl-3.0\",\"urls\":[\"bzz-raw://47c11d578cc1e0df27e4e85cfe5831a48b78d6e939d34e17db4bc65a54c899fe\",\"dweb:/ipfs/QmYdYLkYFJe3psmQUH1S1uNhGE9xyxeDunuEW9gBPg9vDB\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.6.12+commit.27d51765"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract ILendingPoolAddressesProvider",
+              "name": "provider",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "ADDRESSES_PROVIDER",
+          "outputs": [
+            {
+              "internalType": "contract ILendingPoolAddressesProvider",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "LENDING_POOL",
+          "outputs": [
+            {
+              "internalType": "contract ILendingPool",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address[]",
+              "name": "assets",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "amounts",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "premiums",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "address",
+              "name": "initiator",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "params",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "executeOperation",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@aave-v3-core/=lib/aave-v3-core/",
+        ":aave-v3-core/=lib/aave-v3-core/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":protocol-v2/=lib/protocol-v2/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/protocol-v2/contracts/flashloan/base/FlashLoanReceiverBase.sol": "FlashLoanReceiverBase"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/Address.sol": {
+        "keccak256": "0xb7f2cd193efe93976d7b473fc4fa27dda83bd4db5b81889cbcd4701f3b7023ae",
+        "urls": [
+          "bzz-raw://2275632637acd2f30d576612dcddc1c6ba78d81af4d044fafe870e6a809a8b6e",
+          "dweb:/ipfs/QmW3uMzrLbjzP45zVpP8e9V6o8WFSceHiHq8WDMJ8YjCeL"
+        ],
+        "license": "agpl-3.0"
+      },
+      "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/IERC20.sol": {
+        "keccak256": "0x6406b04abfeda2c8c80ea3faf797ce4501e66db41fb6ff4e299ebe0402879f44",
+        "urls": [
+          "bzz-raw://33b0db81db37bd6fe20aa0b23581c6b0edef2f3c49d0bd88b4fe46c1164adb00",
+          "dweb:/ipfs/QmYn1zYwt3ahpkLYwHh6h5b1UJrzP2xy5G3at9oEVNw2c1"
+        ],
+        "license": "agpl-3.0"
+      },
+      "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeERC20.sol": {
+        "keccak256": "0xd664a81c469ebd6c7b09ca8be499e6af30100e3e42be6bfea9f4a90c02a7cb1c",
+        "urls": [
+          "bzz-raw://c9f8ac1ffeaaefc7685abd544813e31ebb46e81b393291d68b1a99a9c7550df2",
+          "dweb:/ipfs/QmP3xWkMNgDBbDn9HF6vVKpHTP5rW4j7dxWmhKsxicQ7Mg"
+        ],
+        "license": "MIT"
+      },
+      "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeMath.sol": {
+        "keccak256": "0xfca35d11bafb85cf4f2203b41f1a98238dca59b6a9faa28b86ea3f9f63da8ec5",
+        "urls": [
+          "bzz-raw://7019345b024afa93000c6b5a2b095be59c3c5352eb658619c941d23d0af5bc65",
+          "dweb:/ipfs/QmZLxJKSbM66Wd1Qd43jSdiXdg7JP6DQ9J6LuANUZummM4"
+        ],
+        "license": "agpl-3.0"
+      },
+      "lib/protocol-v2/contracts/flashloan/base/FlashLoanReceiverBase.sol": {
+        "keccak256": "0x8fe7badbe296140c709cb98e58df6dc74cff47ba8f5237d079ef659f0b28dc62",
+        "urls": [
+          "bzz-raw://48c297952c8b24a45fe359b61863d7fb180ad78a1a8054e1227588c313712c64",
+          "dweb:/ipfs/QmYszjb1kFUM6sFsfsynSMUxCgtxwvsvPCaeXw2FHsgK81"
+        ],
+        "license": "agpl-3.0"
+      },
+      "lib/protocol-v2/contracts/flashloan/interfaces/IFlashLoanReceiver.sol": {
+        "keccak256": "0x5d3699fb09fdcfd69dfb67538dc3a0711711ad0d1ff54723cb371a3359d64107",
+        "urls": [
+          "bzz-raw://f86660197ef51242bf7d475376dab88b20b27d54eb59ba818881e208ccd8a8ac",
+          "dweb:/ipfs/QmPpMtC1umHtnaq6dFwCgQkxdzWveXuGzN6ECVBHZ7obuy"
+        ],
+        "license": "agpl-3.0"
+      },
+      "lib/protocol-v2/contracts/interfaces/ILendingPool.sol": {
+        "keccak256": "0x5fa85a3137312e0d37602723af7408ed97636028699bdf7a7c7cc2dc34cdbafc",
+        "urls": [
+          "bzz-raw://2f084d52067cbb14f10a00813b17c386681e17e295f878d3d8992cef63e67ac1",
+          "dweb:/ipfs/QmWGjEYp4ZHmMxW7zkV8ctsmpc5kAYDw3yqaf1LZGsFFuJ"
+        ],
+        "license": "agpl-3.0"
+      },
+      "lib/protocol-v2/contracts/interfaces/ILendingPoolAddressesProvider.sol": {
+        "keccak256": "0xcb0e2c4c19c0bde86907b6ab45b6a1db4932d3642fc51410d56c9411a65b9f1d",
+        "urls": [
+          "bzz-raw://38d01c9e664c64d46a15bbbda2933b5fb877d33f6746d2db32563962beea9119",
+          "dweb:/ipfs/QmajEmcQZz3E6GzmLpeGvnEswuwCjVYy8svqdx8bxi4PuG"
+        ],
+        "license": "agpl-3.0"
+      },
+      "lib/protocol-v2/contracts/protocol/libraries/types/DataTypes.sol": {
+        "keccak256": "0xb1d3ae94d3e4b3bf23b3394d820a3a2b5ba56fd5389f561f3fdd73ed1c60c391",
+        "urls": [
+          "bzz-raw://47c11d578cc1e0df27e4e85cfe5831a48b78d6e939d34e17db4bc65a54c899fe",
+          "dweb:/ipfs/QmYdYLkYFJe3psmQUH1S1uNhGE9xyxeDunuEW9gBPg9vDB"
+        ],
+        "license": "agpl-3.0"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/protocol-v2/contracts/flashloan/base/FlashLoanReceiverBase.sol",
+    "id": 542,
+    "exportedSymbols": {
+      "FlashLoanReceiverBase": [
+        541
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "37:925:4",
+    "nodes": [
+      {
+        "id": 496,
+        "nodeType": "PragmaDirective",
+        "src": "37:23:4",
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ]
+      },
+      {
+        "id": 498,
+        "nodeType": "ImportDirective",
+        "src": "62:80:4",
+        "absolutePath": "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeMath.sol",
+        "file": "../../dependencies/openzeppelin/contracts/SafeMath.sol",
+        "scope": 542,
+        "sourceUnit": 495,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "argumentTypes": null,
+              "id": 497,
+              "name": "SafeMath",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": null,
+              "src": "70:8:4",
+              "typeDescriptions": {
+                "typeIdentifier": null,
+                "typeString": null
+              }
+            },
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 500,
+        "nodeType": "ImportDirective",
+        "src": "143:76:4",
+        "absolutePath": "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/IERC20.sol",
+        "file": "../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "scope": 542,
+        "sourceUnit": 142,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "argumentTypes": null,
+              "id": 499,
+              "name": "IERC20",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": null,
+              "src": "151:6:4",
+              "typeDescriptions": {
+                "typeIdentifier": null,
+                "typeString": null
+              }
+            },
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 502,
+        "nodeType": "ImportDirective",
+        "src": "220:82:4",
+        "absolutePath": "lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeERC20.sol",
+        "file": "../../dependencies/openzeppelin/contracts/SafeERC20.sol",
+        "scope": 542,
+        "sourceUnit": 299,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "argumentTypes": null,
+              "id": 501,
+              "name": "SafeERC20",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": null,
+              "src": "228:9:4",
+              "typeDescriptions": {
+                "typeIdentifier": null,
+                "typeString": null
+              }
+            },
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 504,
+        "nodeType": "ImportDirective",
+        "src": "303:72:4",
+        "absolutePath": "lib/protocol-v2/contracts/flashloan/interfaces/IFlashLoanReceiver.sol",
+        "file": "../interfaces/IFlashLoanReceiver.sol",
+        "scope": 542,
+        "sourceUnit": 578,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "argumentTypes": null,
+              "id": 503,
+              "name": "IFlashLoanReceiver",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": null,
+              "src": "311:18:4",
+              "typeDescriptions": {
+                "typeIdentifier": null,
+                "typeString": null
+              }
+            },
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 506,
+        "nodeType": "ImportDirective",
+        "src": "376:97:4",
+        "absolutePath": "lib/protocol-v2/contracts/interfaces/ILendingPoolAddressesProvider.sol",
+        "file": "../../interfaces/ILendingPoolAddressesProvider.sol",
+        "scope": 542,
+        "sourceUnit": 1104,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "argumentTypes": null,
+              "id": 505,
+              "name": "ILendingPoolAddressesProvider",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": null,
+              "src": "384:29:4",
+              "typeDescriptions": {
+                "typeIdentifier": null,
+                "typeString": null
+              }
+            },
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 508,
+        "nodeType": "ImportDirective",
+        "src": "474:63:4",
+        "absolutePath": "lib/protocol-v2/contracts/interfaces/ILendingPool.sol",
+        "file": "../../interfaces/ILendingPool.sol",
+        "scope": 542,
+        "sourceUnit": 953,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "argumentTypes": null,
+              "id": 507,
+              "name": "ILendingPool",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": null,
+              "src": "482:12:4",
+              "typeDescriptions": {
+                "typeIdentifier": null,
+                "typeString": null
+              }
+            },
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 541,
+        "nodeType": "ContractDefinition",
+        "src": "539:422:4",
+        "nodes": [
+          {
+            "id": 513,
+            "nodeType": "UsingForDirective",
+            "src": "605:27:4",
+            "libraryName": {
+              "contractScope": null,
+              "id": 511,
+              "name": "SafeERC20",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 298,
+              "src": "611:9:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeERC20_$298",
+                "typeString": "library SafeERC20"
+              }
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 512,
+              "name": "IERC20",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 141,
+              "src": "625:6:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IERC20_$141",
+                "typeString": "contract IERC20"
+              }
+            }
+          },
+          {
+            "id": 516,
+            "nodeType": "UsingForDirective",
+            "src": "635:27:4",
+            "libraryName": {
+              "contractScope": null,
+              "id": 514,
+              "name": "SafeMath",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 494,
+              "src": "641:8:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMath_$494",
+                "typeString": "library SafeMath"
+              }
+            },
+            "typeName": {
+              "id": 515,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "654:7:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "id": 519,
+            "nodeType": "VariableDeclaration",
+            "src": "666:74:4",
+            "baseFunctions": [
+              571
+            ],
+            "constant": false,
+            "functionSelector": "0542975c",
+            "mutability": "immutable",
+            "name": "ADDRESSES_PROVIDER",
+            "overrides": {
+              "id": 518,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "713:8:4"
+            },
+            "scope": 541,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_ILendingPoolAddressesProvider_$1103",
+              "typeString": "contract ILendingPoolAddressesProvider"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 517,
+              "name": "ILendingPoolAddressesProvider",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1103,
+              "src": "666:29:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ILendingPoolAddressesProvider_$1103",
+                "typeString": "contract ILendingPoolAddressesProvider"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "id": 522,
+            "nodeType": "VariableDeclaration",
+            "src": "744:51:4",
+            "baseFunctions": [
+              576
+            ],
+            "constant": false,
+            "functionSelector": "b4dcfc77",
+            "mutability": "immutable",
+            "name": "LENDING_POOL",
+            "overrides": {
+              "id": 521,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "774:8:4"
+            },
+            "scope": 541,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_ILendingPool_$952",
+              "typeString": "contract ILendingPool"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 520,
+              "name": "ILendingPool",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 952,
+              "src": "744:12:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ILendingPool_$952",
+                "typeString": "contract ILendingPool"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "id": 540,
+            "nodeType": "FunctionDefinition",
+            "src": "800:159:4",
+            "body": {
+              "id": 539,
+              "nodeType": "Block",
+              "src": "859:100:4",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 529,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 527,
+                      "name": "ADDRESSES_PROVIDER",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 519,
+                      "src": "865:18:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ILendingPoolAddressesProvider_$1103",
+                        "typeString": "contract ILendingPoolAddressesProvider"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 528,
+                      "name": "provider",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 524,
+                      "src": "886:8:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ILendingPoolAddressesProvider_$1103",
+                        "typeString": "contract ILendingPoolAddressesProvider"
+                      }
+                    },
+                    "src": "865:29:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ILendingPoolAddressesProvider_$1103",
+                      "typeString": "contract ILendingPoolAddressesProvider"
+                    }
+                  },
+                  "id": 530,
+                  "nodeType": "ExpressionStatement",
+                  "src": "865:29:4"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 537,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 531,
+                      "name": "LENDING_POOL",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 522,
+                      "src": "900:12:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ILendingPool_$952",
+                        "typeString": "contract ILendingPool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "arguments": [],
+                          "expression": {
+                            "argumentTypes": [],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 533,
+                              "name": "provider",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 524,
+                              "src": "928:8:4",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_ILendingPoolAddressesProvider_$1103",
+                                "typeString": "contract ILendingPoolAddressesProvider"
+                              }
+                            },
+                            "id": 534,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "getLendingPool",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 1037,
+                            "src": "928:23:4",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_view$__$returns$_t_address_$",
+                              "typeString": "function () view external returns (address)"
+                            }
+                          },
+                          "id": 535,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "928:25:4",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 532,
+                        "name": "ILendingPool",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 952,
+                        "src": "915:12:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_ILendingPool_$952_$",
+                          "typeString": "type(contract ILendingPool)"
+                        }
+                      },
+                      "id": 536,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "915:39:4",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ILendingPool_$952",
+                        "typeString": "contract ILendingPool"
+                      }
+                    },
+                    "src": "900:54:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ILendingPool_$952",
+                      "typeString": "contract ILendingPool"
+                    }
+                  },
+                  "id": 538,
+                  "nodeType": "ExpressionStatement",
+                  "src": "900:54:4"
+                }
+              ]
+            },
+            "documentation": null,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "overrides": null,
+            "parameters": {
+              "id": 525,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 524,
+                  "mutability": "mutable",
+                  "name": "provider",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 540,
+                  "src": "812:38:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ILendingPoolAddressesProvider_$1103",
+                    "typeString": "contract ILendingPoolAddressesProvider"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 523,
+                    "name": "ILendingPoolAddressesProvider",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1103,
+                    "src": "812:29:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ILendingPoolAddressesProvider_$1103",
+                      "typeString": "contract ILendingPoolAddressesProvider"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "811:40:4"
+            },
+            "returnParameters": {
+              "id": 526,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "859:0:4"
+            },
+            "scope": 541,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": true,
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 509,
+              "name": "IFlashLoanReceiver",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 577,
+              "src": "582:18:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IFlashLoanReceiver_$577",
+                "typeString": "contract IFlashLoanReceiver"
+              }
+            },
+            "id": 510,
+            "nodeType": "InheritanceSpecifier",
+            "src": "582:18:4"
+          }
+        ],
+        "contractDependencies": [
+          577
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          541,
+          577
+        ],
+        "name": "FlashLoanReceiverBase",
+        "scope": 542
+      }
+    ],
+    "license": "agpl-3.0"
+  },
+  "id": 4
+}

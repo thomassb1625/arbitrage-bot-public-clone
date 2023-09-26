@@ -1,0 +1,1 @@
+[{"stateMutability": "pure", "type": "function", "name": "get_D", "inputs": [{"name": "xp", "type": "uint256[8]"}, {"name": "amp", "type": "uint256"}, {"name": "N_COINS", "type": "uint256"}], "outputs": [{"name": "", "type": "uint256"}]}]
